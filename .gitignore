@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+dist-electron/
+dist-website/
+Release/
+
+# Logs & Temporary Files
+logs/
+*.log
+scratch/
+scratch_kt.html
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.env
+*.env.local

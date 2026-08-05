@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BraveType — Professional Windows Font Manager Tool | Official Site</title>
+  <meta name="description" content="BraveType is a modern, high-performance Windows desktop font manager. Instant <50ms startup, 9 specimen presets, drag & drop collections, and 100% offline privacy." />
+  <link rel="icon" type="image/png" href="assets/images/app_mockup.png" />
+  
+  <!-- Google Fonts for Web UI & Specimen Demo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cinzel:wght@700&family=Fira+Code:wght@500&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+        </div>
+        <span class="font-brand">BraveType</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#demo" class="nav-link">Live Demo</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#smartscreen" class="nav-link">SmartScreen Guide</a></li>
+        <li><a href="#shortcuts" class="nav-link">Shortcuts</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <a href="https://drive.google.com/file/d/13v347bAhfQY6mygL2Mgqg5Be7KrHBTL7/view?usp=sharing" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download App
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="overview" class="hero">
+    <div class="container hero-content">
+      <div class="badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        Release v1.0.0 — Windows 10 / 11 Desktop
+      </div>
+
+      <h1 class="hero-title">
+        Professional Windows <span>Font Management</span> Tool
+      </h1>
+
+      <p class="hero-subtitle">
+        Engineered for graphic designers, UI/UX engineers, and branding agencies. Instant <strong>&lt;50ms cold boot</strong>, 9 real-time specimen layout presets, drag-and-drop manual collections, and 100% offline privacy.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://drive.google.com/file/d/13v347bAhfQY6mygL2Mgqg5Be7KrHBTL7/view?usp=sharing" target="_blank" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download for Windows (.exe)
+        </a>
+        <a href="#smartscreen" class="btn btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          SmartScreen Installation Guide
+        </a>
+      </div>
+
+      <!-- App Interface Frame -->
+      <div class="hero-app-frame">
+        <div class="app-frame-header">
+          <div class="frame-dot dot-red"></div>
+          <div class="frame-dot dot-yellow"></div>
+          <div class="frame-dot dot-green"></div>
+          <span style="font-size: 0.75rem; color: #78716C; font-weight: 600; margin-left: 8px;">BraveType - Font Manager Tool v1.0.0</span>
+        </div>
+        <img src="assets/images/app_mockup.png" alt="BraveType Application Mockup Preview" class="app-frame-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LIVE SPECIMEN DEMO WIDGET -->
+  <section id="demo" class="demo-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Interactive Experience</div>
+        <h2 class="section-title">Live Specimen Preview Engine</h2>
+        <p class="section-desc">Try BraveType's preview presets directly in your browser. Type custom text, adjust font scaling, and preview typeface layouts instantly.</p>
+      </div>
+
+      <div class="demo-widget">
+        <div class="demo-controls">
+          <div class="demo-input-row">
+            <input type="text" id="demo-text-input" class="demo-text-input" value="The quick brown fox jumps over the lazy dog" placeholder="Type custom specimen text here..." />
+            
+            <div class="slider-group">
+              <span>Font Size:</span>
+              <input type="range" id="demo-size-slider" min="16" max="72" value="28" />
+              <span id="demo-size-value" style="color: var(--color-accent); width: 36px; text-align: right;">28px</span>
+            </div>
+          </div>
+
+          <div class="pills-row">
+            <button class="pill-btn active" data-mode="Sentence">Sentence</button>
+            <button class="pill-btn" data-mode="Heading">Heading</button>
+            <button class="pill-btn" data-mode="Alphabet">Alphabet</button>
+            <button class="pill-btn" data-mode="Numbers">Numbers</button>
+            <button class="pill-btn" data-mode="Logo">Logo</button>
+            <button class="pill-btn" data-mode="Button">Button</button>
+            <button class="pill-btn" data-mode="Business Card">Business Card</button>
+          </div>
+        </div>
+
+        <div class="demo-cards-grid">
+          <!-- Card 1 -->
+          <div class="demo-font-card">
+            <div class="card-font-header">
+              <span class="font-name">Inter</span>
+              <span class="font-category">Sans-serif</span>
+            </div>
+            <div class="card-font-specimen" style="font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 400;">
+              The quick brown fox jumps over the lazy dog
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="demo-font-card">
+            <div class="card-font-header">
+              <span class="font-name">Playfair Display</span>
+              <span class="font-category">Serif</span>
+            </div>
+            <div class="card-font-specimen" style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 600;">
+              The quick brown fox jumps over the lazy dog
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="demo-font-card">
+            <div class="card-font-header">
+              <span class="font-name">Fira Code</span>
+              <span class="font-category">Monospace</span>
+            </div>
+            <div class="card-font-specimen" style="font-family: 'Fira Code', monospace; font-size: 28px; font-weight: 500;">
+              The quick brown fox jumps over the lazy dog
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="demo-font-card">
+            <div class="card-font-header">
+              <span class="font-name">Outfit</span>
+              <span class="font-category">Display</span>
+            </div>
+            <div class="card-font-specimen" style="font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 700;">
+              The quick brown fox jumps over the lazy dog
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="demo-font-card">
+            <div class="card-font-header">
+              <span class="font-name">Caveat</span>
+              <span class="font-category">Handwriting</span>
+            </div>
+            <div class="card-font-specimen" style="font-family: 'Caveat', cursive; font-size: 34px; font-weight: 600;">
+              The quick brown fox jumps over the lazy dog
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="demo-font-card">
+            <div class="card-font-header">
+              <span class="font-name">Cinzel</span>
+              <span class="font-category">Display Serif</span>
+            </div>
+            <div class="card-font-specimen" style="font-family: 'Cinzel', serif; font-size: 26px; font-weight: 700;">
+              The quick brown fox jumps over the lazy dog
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Engineered for Performance</div>
+        <h2 class="section-title">Built for Professional Typography Workflows</h2>
+        <p class="section-desc">Every feature in BraveType is optimized for speed, precision, and complete offline autonomy.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="feature-title">Fast Metadata Cache</h3>
+          <p class="feature-desc">Dual-stage JSON caching mechanism (`fontCache.json`) bypasses slow OS directory re-scans, launching your collection in under 50ms.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3 class="feature-title">9 Specimen Layout Modes</h3>
+          <p class="feature-desc">Instantly test typefaces across Sentence, Paragraph, Alphabet, Numbers, Logo, Poster, Button, and Business Card layout presets.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </div>
+          <h3 class="feature-title">Lazy Viewport Loading</h3>
+          <p class="feature-desc">IntersectionObserver dynamic `@font-face` injection renders 2,000+ installed system fonts smoothly with zero browser RAM spikes.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <h3 class="feature-title">Manual Drag & Drop Collections</h3>
+          <p class="feature-desc">Organize fonts into custom project folders. Easily drag-and-drop font families, duplicate collections, rename, and sort alphabetically.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+          </div>
+          <h3 class="feature-title">Character Map & Waterfall</h3>
+          <p class="feature-desc">Modal spec sheet featuring scaling waterfall preview (14px–80px), full style matrices, and interactive unicode character grids.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="feature-title">Developer Mode & CSS Export</h3>
+          <p class="feature-desc">Inspect PostScript names, OpenType table structures, glyph counts, variable font axes, and copy instant CSS snippets.</p>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+          </div>
+          <h3 class="feature-title">Web Audio Click Synthesizer</h3>
+          <p class="feature-desc">Built-in audio synthesizer generating subtle mechanical keyboard typing sounds during application splash initialization.</p>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <h3 class="feature-title">100% Offline & Private</h3>
+          <p class="feature-desc">Operates entirely on your local machine. Zero telemetry, zero analytics tracking, zero cloud server dependencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WINDOWS SMARTSCREEN & INSTALLATION GUIDE SECTION -->
+  <section id="smartscreen" class="smartscreen-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" style="background-color: #FEF3C7; color: #D97706; border-color: #F59E0B;">Installation Walkthrough</div>
+        <h2 class="section-title">Windows SmartScreen Installation Guide</h2>
+        <p class="section-desc">When installing BraveType on Windows, you may encounter the <strong>"Windows protected your PC"</strong> SmartScreen prompt. Here is why it appears and how to complete setup safely in 4 easy steps.</p>
+      </div>
+
+      <!-- Warning Explanation Banner -->
+      <div class="alert-banner">
+        <div class="alert-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        </div>
+        <div class="alert-content">
+          <h4>Why does Windows SmartScreen display a warning?</h4>
+          <p>BraveType is an open-source tool. Commercial EV Code Signing Certificates cost $500+/year. Because this binary is brand new and non-commercial, Windows SmartScreen flags it as "unknown publisher" by default. <strong>BraveType is 100% clean, open-source, and malware-free.</strong> You can verify our source code or SHA256 checksum at any time.</p>
+        </div>
+      </div>
+
+      <!-- 4-Step Installation Cards Grid -->
+      <div class="guide-steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Download Installer</h3>
+          <p class="step-desc">Click the download button to get the official installer from Google Drive or GitHub releases.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Launch Executable</h3>
+          <p class="step-desc">Double-click the downloaded file in your Windows Downloads folder to start installation.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Click "More Info"</h3>
+          <p class="step-desc">When the blue <em>"Windows protected your PC"</em> window appears, click the <strong>"More info"</strong> link text under the title.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Click "Run Anyway"</h3>
+          <p class="step-desc">A new button labeled <strong>"Run anyway"</strong> will appear at the bottom right. Click it to launch setup!</p>
+        </div>
+      </div>
+
+      <!-- Visual Guide Screenshot Frame -->
+      <div class="guide-visual-container">
+        <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px;">Visual Guide: SmartScreen Dialog Walkthrough</h4>
+        <img src="assets/images/smartscreen_guide.png" alt="Windows SmartScreen Installation Guide Visual Diagram" class="guide-visual-img" />
+      </div>
+
+      <!-- Checksum Verification Box -->
+      <div class="checksum-box">
+        <div class="checksum-info">
+          <h5>SHA256 Checksum Verification (BraveType-v1.0.0.exe)</h5>
+          <p style="font-size: 0.85rem; color: var(--color-charcoal-muted);">Verify installer integrity using PowerShell command: <code>Get-FileHash -Algorithm SHA256 .\BraveType-Setup-v1.0.0.exe</code></p>
+          <div class="checksum-code" id="checksum-code">
+            e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+          </div>
+        </div>
+        <button class="btn btn-secondary" id="copy-checksum-btn" style="padding: 10px 18px; font-size: 0.85rem;">
+          Copy Checksum
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEYBOARD SHORTCUTS REFERENCE TABLE -->
+  <section id="shortcuts" class="shortcuts-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Productivity</div>
+        <h2 class="section-title">Global Keyboard Shortcuts</h2>
+        <p class="section-desc">Master BraveType with quick key combinations designed for rapid font navigation.</p>
+      </div>
+
+      <table class="shortcuts-table">
+        <thead>
+          <tr>
+            <th>Shortcut</th>
+            <th>Action Description</th>
+            <th>Scope / Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd>Ctrl</kbd> + <kbd>F</kbd></td>
+            <td>Focus global font search input bar</td>
+            <td>Global Application</td>
+          </tr>
+          <tr>
+            <td><kbd>Ctrl</kbd> + <kbd>R</kbd></td>
+            <td>Trigger background system font rescan</td>
+            <td>Global Application</td>
+          </tr>
+          <tr>
+            <td><kbd>Ctrl</kbd> + <kbd>,</kbd></td>
+            <td>Open Application Settings modal</td>
+            <td>Global Application</td>
+          </tr>
+          <tr>
+            <td><kbd>Enter</kbd></td>
+            <td>Open full specimen spec sheet for selected font</td>
+            <td>Font Grid / List Selection</td>
+          </tr>
+          <tr>
+            <td><kbd>Delete</kbd></td>
+            <td>Delete currently active manual collection folder</td>
+            <td>Active Folder Selection</td>
+          </tr>
+          <tr>
+            <td><kbd>Esc</kbd></td>
+            <td>Close open modal dialogs</td>
+            <td>Modal Overlay</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD SECTION -->
+  <section id="download" class="download-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Get BraveType</div>
+        <h2 class="section-title">Download for Windows</h2>
+        <p class="section-desc">Get the official release version. Works on Windows 10 and Windows 11 (64-bit).</p>
+      </div>
+
+      <div class="download-cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 480px)); justify-content: center;">
+        <!-- Download 1: Installer -->
+        <div class="download-card featured">
+          <div class="featured-badge">Recommended</div>
+          <div class="dl-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </div>
+          <h3 class="dl-title">BraveType for Windows (.exe)</h3>
+          <p class="dl-sub">Full setup installer for Windows 10 & 11.</p>
+          <a href="https://drive.google.com/file/d/13v347bAhfQY6mygL2Mgqg5Be7KrHBTL7/view?usp=sharing" target="_blank" class="btn btn-primary" style="width: 100%;">
+            Download from Google Drive
+          </a>
+          <span style="font-size: 0.75rem; color: var(--color-charcoal-subtle); margin-top: 12px;">Build: v1.0.0  •  Windows Executable</span>
+        </div>
+
+        <!-- Download 2: Source Code -->
+        <div class="download-card">
+          <div class="dl-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </div>
+          <h3 class="dl-title">Source Code (GitHub)</h3>
+          <p class="dl-sub">Build from source using Node.js, Electron & Vite.</p>
+          <a href="https://github.com/PratikRajputBrave/bravetypefont" target="_blank" class="btn btn-secondary" style="width: 100%;">
+            View GitHub Repository
+          </a>
+          <span style="font-size: 0.75rem; color: var(--color-charcoal-subtle); margin-top: 12px;">License: MIT  •  Open Source</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Got Questions?</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Find quick answers to common questions about BraveType installation, security, and font management.</p>
+      </div>
+
+      <div class="faq-list">
+        <!-- Q1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Is BraveType completely free and open-source?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            Yes! BraveType is 100% open-source software developed by Brave Studios under the permissive MIT License. There are no subscriptions, no locked features, and no hidden ads.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Why does Windows SmartScreen display a warning when launching setup?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            Windows SmartScreen flags newly released open-source executables that lack a paid commercial Code Signing Certificate ($500+/year). BraveType is completely safe and malware-free. Simply click <strong>"More info"</strong> and then <strong>"Run anyway"</strong> to install.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does BraveType collect any user data or font metrics?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            No. BraveType operates 100% offline. It contains zero analytics, zero telemetry tracking, and zero remote server connections. Your font library remains entirely private on your disk.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Which font file formats are supported?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            BraveType supports TrueType (`.ttf`), OpenType (`.otf`), Web Open Font Format (`.woff`, `.woff2`), and TrueType Collections (`.ttc`). It also detects OpenType Variable fonts and axis definitions.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I scan custom font directories outside `C:\Windows\Fonts`?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            Yes! Open Application Settings (`Ctrl+,`), navigate to the <strong>Advanced & Backup</strong> tab, and add any custom directory path (e.g. `D:\MyFontLibrary`). BraveType will index and include those fonts automatically.
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I export or backup my custom font collection folders?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            In Application Settings under <strong>Advanced & Backup</strong>, click <strong>Export Backup JSON</strong>. This creates a complete backup file containing your favorites, collections, and preferences that you can import anytime.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENCY CUSTOM WEBSITE CTA SECTION -->
+  <section class="agency-cta-section">
+    <div class="container">
+      <div class="agency-cta-card">
+        <div class="badge" style="background-color: rgba(232, 106, 51, 0.15); color: #E86A33; border-color: rgba(232, 106, 51, 0.3);">
+          Custom Software & Web Engineering
+        </div>
+
+        <h2 class="agency-cta-title">Need a Custom Website or Software Built?</h2>
+        <p class="agency-cta-desc">
+          Looking for a high-performance web application, desktop software, custom dashboard, or modern website built for your brand or business? Partner with <strong>Brave Studios</strong> to bring your vision to life.
+        </p>
+
+        <div class="contact-badges">
+          <a href="tel:9136543329" class="contact-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Pratik Rajput: 9136543329
+          </a>
+          <a href="tel:9665916979" class="contact-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Tanmay (Costing & Tech Stack): 9665916979
+          </a>
+          <a href="mailto:pratikrajput.brave@gmail.com" class="contact-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            pratikrajput.brave@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <a href="mailto:pratikrajput.brave@gmail.com?subject=Custom%20Website%20/%20Software%20Inquiry" class="btn btn-primary" style="padding: 14px 32px; font-size: 1rem;">
+            Build Your Website with Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3 class="font-brand">BraveType — Font Manager Tool</h3>
+          <p>Professional, offline-first Windows font management engineered by <strong>Brave Studios</strong>.</p>
+          <p style="font-size: 0.85rem; color: #A8A29E; margin-top: 8px;">
+            📞 <strong>Pratik Rajput (Brave Studios):</strong> <a href="tel:9136543329" style="color: var(--color-accent); text-decoration: underline;">9136543329</a> &nbsp;|&nbsp; 
+            📞 <strong>Tanmay (Costing & Tech Stack):</strong> <a href="tel:9665916979" style="color: var(--color-accent); text-decoration: underline;">9665916979</a> &nbsp;|&nbsp; 
+            ✉️ <strong>Email:</strong> <a href="mailto:pratikrajput.brave@gmail.com" style="color: var(--color-accent); text-decoration: underline;">pratikrajput.brave@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#overview" class="footer-link">Overview</a>
+          <a href="#smartscreen" class="footer-link">SmartScreen Guide</a>
+          <a href="#download" class="footer-link">Download</a>
+          <a href="https://github.com/PratikRajputBrave/bravetypefont" target="_blank" class="footer-link">GitHub</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Made with ❤️ by <strong>Brave Studios</strong> &nbsp;•&nbsp; 📞 Pratik: 9136543329 &nbsp;•&nbsp; 📞 Tanmay (Costing): 9665916979 &nbsp;•&nbsp; ✉️ pratikrajput.brave@gmail.com &nbsp;•&nbsp; Copyright © 2026. Licensed under MIT.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

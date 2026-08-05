@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* Transcity Brand Font Declaration */
+@font-face {
+  font-family: 'Transcity';
+  src: local('Transcity'),
+       local('Transcity Regular'),
+       url('/fonts/Transcity.woff2') format('woff2'),
+       url('/fonts/Transcity.woff') format('woff'),
+       url('/fonts/Transcity.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    background-color: #FAF7F2;
+    color: #2C2825;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* Custom Paper Theme Tokens & Brand Typography for Tailwind v4 */
+@theme {
+  --color-paper-bg: #FAF7F2;
+  --color-paper-cream: #F7F3EC;
+  --color-paper-card: #FFFFFF;
+  --color-paper-border: #EFE8DD;
+  --color-paper-borderDark: #E2D9CB;
+
+  --color-accent-orange: #E86A33;
+  --color-accent-orangeHover: #D55923;
+  --color-accent-orangeLight: #FDF1EB;
+
+  --color-charcoal-main: #2C2825;
+  --color-charcoal-muted: #78716C;
+  --color-charcoal-subtle: #A8A29E;
+
+  --font-brand: 'Transcity', 'Inter', system-ui, -apple-system, sans-serif;
+
+  --shadow-paper-sm: 0 1px 3px rgba(44, 40, 37, 0.04), 0 1px 2px rgba(44, 40, 37, 0.02);
+  --shadow-paper-md: 0 4px 12px rgba(44, 40, 37, 0.06), 0 1px 4px rgba(44, 40, 37, 0.03);
+  --shadow-paper-lg: 0 12px 32px rgba(44, 40, 37, 0.08), 0 2px 8px rgba(44, 40, 37, 0.04);
+}
+
+.font-brand {
+  font-family: 'Transcity', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Paper Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E2D9CB;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8BDAE;
+}
+
+/* Custom Drag Target Styling */
+.drag-over {
+  border-color: #E86A33 !important;
+  background-color: #FDF1EB !important;
+}

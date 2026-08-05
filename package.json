@@ -1,0 +1,89 @@
+{
+  "name": "bravetype-font-manager",
+  "version": "1.0.0",
+  "description": "BraveType - Font Manager Tool: Professional Windows Font Management Application",
+  "productName": "BraveType - Font Manager Tool",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && tsc -p tsconfig.electron.json",
+    "build:website": "cd website && npm install && npm run build",
+    "pack": "cross-env CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --dir",
+    "dist": "npm run build && node scripts/generate-icon.js && cross-env CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --win nsis portable",
+    "release": "npm run dist && node scripts/prepare-release.js",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "bravetype",
+    "fonts",
+    "font-manager",
+    "electron",
+    "react",
+    "typography",
+    "windows",
+    "desktop"
+  ],
+  "author": "Brave Studios",
+  "license": "MIT",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "fontkit": "^2.0.4",
+    "framer-motion": "^12.43.0",
+    "lucide-react": "^0.474.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/fontkit": "^2.0.3",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.1",
+    "vite-plugin-electron": "^0.28.2",
+    "vite-plugin-electron-renderer": "^0.14.6",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.bravestudios.bravetype",
+    "productName": "BraveType - Font Manager Tool",
+    "executableName": "BraveType Font Manager Tool",
+    "copyright": "© Brave Studios",
+    "directories": {
+      "output": "Release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "build/icon.png",
+      "signAndEditExecutable": false,
+      "verifyUpdateCodeSignature": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "BraveType Font Manager Tool",
+      "uninstallDisplayName": "BraveType Font Manager Tool"
+    }
+  }
+}
