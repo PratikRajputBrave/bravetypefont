@@ -2,9 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BraveType - Font Manager Tool</title>
+    <title>BraveType — Font Manager Tool</title>
+    <!-- Automatic GitHub Pages Redirect to Marketing Site -->
+    <script>
+      (function() {
+        // If loaded on GitHub Pages or production web server without Vite dev server
+        const isViteDev = window.location.port === '5173';
+        if (!isViteDev && (window.location.hostname.includes('github.io') || window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/index.html'))) {
+          window.location.replace('./bravtypewebsite/');
+        }
+      })();
+    </script>
+    <meta http-equiv="refresh" content="0; url=bravtypewebsite/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Google Fonts for App UI -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
